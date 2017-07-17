@@ -31,7 +31,7 @@ I sistemi di Business Intelligence e le Data Science dall'altra si integrano nel
 
 Nel
 
-\keywords{Business Intelligence, Dashboard, Business Analytics, Big Data, Data Integration, Layout, DataWarehousing}
+\keywords{Business Intelligence, Dashboard, Business Analytics, Big Data, Data Integration, Layout, DataWarehousing, Data Science, Big Data}
 \end{abstract}
 
 
@@ -44,6 +44,8 @@ Nel
 
 Lo sviluppo dei sistemi di Business Intelligence degli ultimi dieci anni, grazie anche ad una aumento delle risorse di calcolo dei computer, ha fatto nascere possibilità di business che si sono concretizzate in diverse realtà aziendali. L'enorme quantità di dati a disposizione doveva in un qualche modo esser rappresentata. Da questo punto di vista molte aziende di software hanno sviluppato prodotti proprietari per soddisfare queste esigenze. Di pari passo con questi sviluppi, anche la comunità open source si è organizzata ed ha rilasciato una serie di prodotti che negli ultimi anni stanno rubando fette di mercato importanti. La comunità open source, come del resto anche con altre tipologie di prodotto, affianca alla versione comunity una versione Enterprise con funzionalità aggiuntive e l'assistenza di aziende specializzate.
 
+Allo stesso modo l'evoluzione delle Data Science ha dato un forte spinta verso un insieme di tecniche e di linguaggi di programmazione che forniscono strumenti per raccogliere, analizzare e pubblicare dati ed elaborazioni. Python in notevole sviluppo ma anche software statistici come R che forniscono strumenti veloci di pubblicazione dei risultati con al loro interno un vero e prorpio motore statistico.
+
 I concetti che tratteremo nel seguito dell'articolo riguardano la rappresentazione in forma grafica e tabella di dati e come questi devono essere organizzati. Parlemo di tabelle e grafici, in modo unico, ma anche come questi devono essere messi insieme al fine di costrutire un dashboard.
 
 Questa la definizione in inglese secondo Stephan Few:
@@ -52,8 +54,6 @@ Questa la definizione in inglese secondo Stephan Few:
 \end{quotation}
 
 
-Nel presente report analizzaremo alcuni di questi prodotti tra i più diffusi
-{Inserisci l'immagine della Gattner} , alcuni esclusivamente proprietari ed altri open source.
 
 \section{Una breve storia}
 
@@ -78,15 +78,18 @@ La vista è sicuramente il senso che domina qualsiasi altra sensazione per la qu
 
 Quindi anche il pensiero è fortemente influenzato dalla vista.
 
-Gli occhi e la corteccia sono una dei più potenti elaboratori di una enorme mole di informazioni recepite in modo parallelo e trasmesso ad altissima velocità al centro cognitivo. Processing, Perception e cognition sono strettamente correlati ma presentano comunque dei punti di forte instabilità. Da un certo di punti di vista è scorretto chiamarla instabilità, sarebbe meglio considerare che comunque ci sono delle regole che tutto questo sistema deve seguire. Regole che consentono per esempio di vedere un oggetto in determinate condizioni ma di non vederlo più, a anche se esiste sempre, se queste condizioni cambiano.
-Per questo è la percezione l'aspetto da studiare, proprio perchè quando i dati vengono presentati in un dato modo vengono percepiti in modo corretti. Capire come  funziona la percezione, consente di definire un insieme di regole per visualizzare le informazioni. Questo consente anche di poter rappresentare i dati in modo tale enfatizzare quelli più rilevanti ed informativi.
+Gli occhi e la corteccia sono una dei più potenti elaboratori di una enorme mole di informazioni recepite in modo parallelo e trasmesso ad altissima velocità al centro cognitivo. Processing, Perception e cognition sono strettamente correlati ma presentano comunque dei punti di forte instabilità. Da un certo di punto di vista è scorretto chiamarla instabilità, sarebbe meglio considerare che comunque ci sono delle regole che tutto questo sistema deve seguire. Regole che consentono per esempio di vedere un oggetto in determinate condizioni ma di non vederlo più, a anche se esiste sempre, se queste condizioni cambiano.
+Per questo è la percezione l'aspetto da studiare, proprio perchè quando i dati vengono presentati in un dato modo vengono percepiti in modo corretto. Capire come  funziona la percezione, consente di definire un insieme di regole per visualizzare le informazioni. Questo consente anche di poter rappresentare i dati in modo tale da enfatizzare quelli più rilevanti ed informativi.
 Logicamente non rispettare queste regole può rendere la rappresentazione incompresibile.
 
 Le rappresentazioni devono quindi essere tale da enfatizzare i dati importanti rispetto al resto. Rappresentare significa anche organizzare le informazioni con l'obiettivo di dare senso alle informazioni diverse, dargli un significato in modo tale che sia percepite.
 
 I principi di Gelstat e i preattintive attribute sono alla base per raggiungere questi obiettivi. Sopratutto cercandone di capire il come e il perchè.
 
-Analizzare la Visual Perception consisete nell'approfondire tre aspetti: I limiti della memoria visuale a breve termine, la decodifica visuale ai fini della precezione e i principi di Gelstat.
+Analizzare la Visual Perception consisete nell'approfondire tre aspetti: 
+- I limiti della memoria visuale a breve termine,
+- la decodifica visuale ai fini della precezione,
+- i principi di Gelstat.
 
 
 \section{Gelstat}
